@@ -38,9 +38,8 @@ A Versão 1.0 da aplicação contém bugs intencionalmente reproduzidos, que for
 
 ## Como Instalar
 
-```bash
-# Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/laisteoo/petcare-qa-project.git
+cd petcare-qa-project
 
 # Acesse a pasta do projeto
 cd petcare
