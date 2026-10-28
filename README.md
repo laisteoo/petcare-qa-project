@@ -1,79 +1,64 @@
-# PetCare – QA Portfolio Project
+# PetCare — Pet Grooming Appointment Scheduling App
 
-PetCare é uma aplicação fictícia de agendamento de banho e tosa para pets, criada como parte de um projeto de portfólio de Quality Assurance (QA). O objetivo é demonstrar o ciclo completo de QA: levantamento de requisitos, execução de testes manuais, reporte de bugs, evidências, correção, reteste e versionamento.
+## Project Overview
 
-## Descrição do Projeto
+PetCare is a web application designed to support appointment scheduling for pet grooming services. This project focuses on evaluating the application's functionality, usability, and behavior through structured software testing.
 
-O PetCare permite que clientes:
+The goal of this QA portfolio project is to demonstrate practical skills in test case design, manual testing, exploratory testing, defect reporting, and test documentation.
 
-- Criem uma conta
-- Façam login
-- Cadastrem seus pets
-- Visualizem serviços disponíveis
-- Agendem serviços de banho e tosa
-- Visualizem seus agendamentos
+## Project Objectives
 
-A Versão 1.0 da aplicação contém bugs intencionalmente reproduzidos, que foram identificados durante a execução de testes manuais na versão fictícia original. Esses bugs serão corrigidos individualmente em versões futuras para demonstrar o ciclo de vida completo de QA.
+- Validate the main appointment scheduling workflows.
+- Verify required fields and input validation.
+- Test positive and negative scenarios.
+- Identify unexpected behavior and document defects.
+- Organize test cases, exploratory testing results, and bug reports.
+- Maintain traceability between test documentation and Jira issues.
 
-## Tecnologias
+## Testing Approach
 
-- **React** – Biblioteca para construção de interfaces
-- **TypeScript** – Tipagem estática
-- **Vite** – Build tool e dev server
-- **Tailwind CSS** – Estilização
-- **React Router** – Roteamento
-- **LocalStorage** – Persistência de dados no navegador
-- **Lucide React** – Ícones
+### Manual Testing
 
-## Funcionalidades Principais
+Designed and executed test cases to verify expected application behavior under different conditions.
 
-- Cadastro de cliente com validação de campos
-- Login com autenticação
-- Cadastro de pets
-- Listagem de serviços (Banho, Tosa, Banho + Tosa, Corte de Unhas)
-- Fluxo de agendamento em etapas (pet → serviço → data → horário → revisão → confirmação)
-- Validações de: serviço obrigatório, data passida, agendamento duplicado
-- Preservação do progresso de agendamento ao recarregar a página
-- Página "Meus Agendamentos"
+### Functional Testing
 
-## Como Instalar
+Checked application features against their expected behavior, including appointment scheduling, required fields, and booking validation.
 
-git clone https://github.com/laisteoo/petcare-qa-project.git
-cd petcare-qa-project
+### Exploratory Testing
 
-# Acesse a pasta do projeto
-cd petcare
+Explored the application beyond predefined test cases to identify unexpected behavior, workflow issues, and potential defects.
 
-# Instale as dependências
-npm install
-```
+### Defect Reporting
 
-## Como Rodar
+Documented identified defects with reproduction steps, expected and actual results, status, and supporting evidence where available.
 
-```bash
-# Modo desenvolvimento
-npm run dev
+## Tools and Technologies
 
-# Build de produção
-npm run build
+- **Jira** — test and defect tracking.
+- **GitHub** — source repository and QA portfolio documentation.
+- **Microsoft Excel / Spreadsheet documentation** — organization of test cases, exploratory tests, and results.
+- **Bolt.new** — used to build the web application for testing.
 
-# Pré-visualizar o build
-npm run preview
-```
+## QA Documentation
 
-A aplicação estará disponível em `http://localhost:5173`.
+The detailed testing documentation is available in the [`qa-documentation`](qa-documentation/README.md) folder.
 
-## Estrutura do Projeto
+- [Test Cases](qa-documentation/Test%20Cases.md)
+- [Bug Reports](qa-documentation/Bug%20Reports.md)
+- [Exploratory Testing](qa-documentation/Exploratory%20Testing.md)
+- [Excel Test Documentation](qa-documentation/PetCare_QA_Test_Documentation_EN.xlsx)
 
-```
-src/
-  components/       # Componentes reutilizáveis (layout, navegação)
-  pages/            # Páginas da aplicação
-  services/         # Lógica de autenticação, dados e catálogo
-  types/            # Definições de tipos TypeScript
-  utils/            # Utilitários (storage, helpers)
-```
+## Project Links
 
-## Notas para QA
+- **Live Application:** [PetCare Web App](https://petcare-qa-portfolio-56oy.bolt.host/)
+- **Jira Board:** [PetCare QA Project](https://raphaelmnc.atlassian.net/jira/software/projects/PQM/boards/36?filter=&groupBy=none)
+- **GitHub Repository:** [PetCare QA Project](https://github.com/laisteoo/petcare-qa-project)
 
-Esta é a Versão 1.0 do projeto. Bugs identificados durante os testes manuais foram intencionalmente reproduzidos no código-fonte, marcados com comentários contendo os IDs dos bugs (ex: `// INTENTIONAL QA BUG - BUG-001`). Esses bugs não estão documentados na interface do usuário, apenas no código-fonte, para que possam ser corrigidos individualmente em commits futuros.
+## Key Learning Outcomes
+
+This project provided practical experience in structuring test documentation, executing test scenarios, investigating unexpected application behavior, reporting defects, and organizing QA evidence in a version-controlled repository.
+
+---
+
+*Portfolio project focused on practical Quality Assurance (QA) skills and software testing fundamentals.*
